@@ -4,4 +4,5 @@ joystick.initJoystick()
 joystick.calibrate()
 basic.forever(function () {
     payload = joystick.newJoyPayload()
+    joystick.sendJoystickPayload(payload)
 })
